@@ -46,10 +46,28 @@ If desired, the object can include 'tsn', the nanoseconds of the timestamp. This
 
 ### Command Object
 ```
-{h:{n:"devicename", t:"2014-03-14T16:00:00.000Z"},c:[
-{n:"setupdate", v:10, t:"2014-03-14T16:30:00.000Z", t_exp:"2014-03-14T17:00:00.000Z"},
-{n:"setcameraserver", a:"192.168.0.1", t:"2014-03-14T16:30:00.000Z", t_exp:"2014-03-14T17:00:00.000Z"}
-]```
+{
+    h:{
+        n:"devicename",
+        t:"2014-03-14T16:00:00.000Z"
+    },
+    c:[
+        {
+            n:"setupdate",
+            v:10,
+            t:"2014-03-14T16:30:00.000Z",
+            t_exp:"2014-03-14T17:00:00.000Z"
+        },
+        {
+            n:"setcameraserver",
+            a:"192.168.0.1",
+            t:"2014-03-14T16:30:00.000Z",
+            t_exp:"2014-03-14T17:00:00.000Z"
+         }
+    ]
+}
+```
+
 Each command object takes a similar format.
 
 The object includes 'n', the unique command name. This is an alphanumeric unique name for the command to the end device.
