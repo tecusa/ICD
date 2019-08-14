@@ -10,8 +10,23 @@ Between many devices, the JSON data format is a reasonable standard format. To f
 
 ## Basic Frame
 ```
-{h:{n:"devicename",t:"2014-03-14T16:00:00.000Z"}, d:[]}
-{h:{n:"devicename",t:"2014-03-14T16:00:00.000Z"}, c:[]}
+{
+    h:{
+        n:"devicename",
+        t:"2014-03-14T16:00:00.000Z"
+    },
+    d:[]
+}
+```
+or
+```
+{
+    h:{
+        n:"devicename",
+        t:"2014-03-14T16:00:00.000Z"
+    },
+    c:[]
+}
 ```
 
 The object must have an 'h' item, which is the header.
@@ -26,10 +41,22 @@ The object contains data or commands within a 'd' or 'c' item, respectively. The
 
 ### Data Object
 ```
-{h:{n:"devicename",t:"2014-03-14T16:00:00.000Z"},d:[
-{n:"voltage", v:4.99},
-{n:"error", a:"Low Voltage"}
-]}
+{
+    h:{
+        n:"devicename",
+        t:"2014-03-14T16:00:00.000Z"
+    },
+    d:[
+        {
+            n:"voltage",
+            v:4.99
+        },
+        {
+            n:"error",
+            a:"Low Voltage"
+        }
+    ]
+}
 ```
 
 Each data object takes a similar format.
