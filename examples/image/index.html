@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JSON Image Example - RadioBro</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+	</head>
+	<body>
+		<center><img></img></center>
+		<center><p>Copyright <a href="https://www.radiobro.com" target="_blank">RadioBro Corporation</a>, 2019.</p></center>
+		<script>
+			const img = document.querySelector("img");
+			$.getJSON('https://raw.githubusercontent.com/RadioBro/ICD/master/examples/image/imageexample.json', function(data) {
+				const data_j = data;
+				img.src = data_j.d[0].a;
+			});
+		</script>
+	</body>
+</html>
