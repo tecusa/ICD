@@ -41,7 +41,7 @@ The unique element in the packet is the parametername "cs". CS data elements are
 
 ### Full Example
 
-<https://github.com/RadioBro/ICD/blob/master/examples/cyclonenode/cyclonenodeexample.json
+[Cyclone Node Example JSON](https://github.com/RadioBro/ICD/blob/master/examples/cyclonenode/cyclonenodeexample.json)
 
 ```json
 {
