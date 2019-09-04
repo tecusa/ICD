@@ -4,6 +4,8 @@
 
 The following packet is defined to allow Cyclone Nodes to be the network gateway for Cyclone Sensors.
 
+Cyclone Node supports state data, as defined [here](https://github.com/RadioBro/ICD/tree/master/examples/state).
+
 ### Discussion CS
 
 The unique element in the packet is the parametername "cs". CS data elements are expected to have a JSON, or "j", payload with the following data:
@@ -16,7 +18,7 @@ The unique element in the packet is the parametername "cs". CS data elements are
   + h the hex value for the parameter, optional
   + j the JSON value for the parameter, optional
 
-### Short Example
+### Short Example of CS
 
 ```json
 {
