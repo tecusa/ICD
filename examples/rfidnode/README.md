@@ -10,8 +10,6 @@ The unique element in the packet is the parametername "state". State data elemen
 
 ### Raw Data Example of RFID Node
 
-[RFID Node JSON Example File](https://github.com/RadioBro/ICD/blob/master/examples/rfidnode/rfidnodeexample.json)
-
 ```json
 {
   "h":{
