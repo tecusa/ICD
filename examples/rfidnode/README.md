@@ -1,5 +1,7 @@
 # RFID Node
 
+The RFID node will send raw scan data, GPS located scan data, or updates of asset positions based on it's own awareness of previous GPS asset data.
+
 ## Sample Data Packet
 
 The following packet is defined to allow all network devies to provide RFID node scan data and state information.
@@ -76,12 +78,12 @@ The unique element in the packet is the parametername "state". State data elemen
         "device":"RFID0000",
         "epc":"",
         "sn":"",
-        "type":"gps",
         "lat": 30.00,
         "lng": -90.00,
         "alt": 10,
         "hae": -27.2556,
-        "radius": 1
+        "radius": 1,
+        "direction": 20
       }
     }
   ]
@@ -113,3 +115,32 @@ j.alt is altitude in meters above sea level (optional)
 j.hae is height above ellipsoide in meters, measuring meters above sea level. The example is negative, demonstrating the sea level is over actual ellipsoid by 27 meters. (optional)
 
 j.radius is the radius of GPS accuracy in meters (optional)
+
+j.direction is degrees from North
+
+## Asset List Updates - Command
+
+```json
+{
+    h:{
+        n:"RFID0000",
+        t:"2014-03-14T16:00:00.000Z"
+    },
+    c:[
+        {
+        "n":"rfidgps",
+        "t":"2019-11-01T13:33:21.000Z",
+        "j":{
+          "epc":"",
+          "sn":"",
+          "lat": 30.00,
+          "lng": -90.00,
+          "alt": 10,
+          "hae": -27.2556,
+          "radius": 1,
+          "direction": 20
+        }
+      }
+    ]
+}
+```
