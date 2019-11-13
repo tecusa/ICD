@@ -25,13 +25,18 @@ The unique element in the packet is the parametername "state". State data elemen
     },
     {
       "n":"rfidraw",
-      "h": ""
+      "t":"2019-11-01T13:33:23.003Z",
+      "h": "",
+      "j":{
+        "device":"RFID0000"
+      }
     },
     {
       "n":"rfidscan",
       "h": "",
       "t":"2019-11-01T13:33:23.003Z",
       "j":{
+        "device":"RFID0000",
         "epc":"",
         "sn":"",
         "rssi": 10,
@@ -59,7 +64,13 @@ The unique element in the packet is the parametername "state". State data elemen
 
 h is the hex response of the rfid capture
 
+### rfidscan Details
 
+j.device is the device name that performs the scan.
+
+j.epc is the Electronic Product Code™ stored in the tag that was scanned.
+
+j.sn is the serial number stored in the tag that was scanned.
 
 j.rssi is the receive signal strength indicator in dBm.
 
