@@ -38,9 +38,18 @@ The unique element in the packet is the parametername "state". State data elemen
         "lat": 30.00,
         "lng": -90.00,
         "alt": 10,
-        "gae": -27.2556
+        "hae": -27.2556
       }
     }
   ]
 }
 ```
+
+lat is always North up to 90. Use negative number to go South.
+
+lng is always East, up to 180. Use negativ number to go West.
+
+alt is altitude in meters above sea level
+
+hae is height above ellipsoide in meters, measuring meters above sea level. The example is negative, demonstrating the sea level is over actual ellipsoid by 27 meters.
+
