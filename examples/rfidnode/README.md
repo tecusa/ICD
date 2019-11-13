@@ -25,10 +25,7 @@ The unique element in the packet is the parametername "state". State data elemen
     },
     {
       "n":"rfidraw",
-      "h": "",
-      "j":{
-        "rssi": 10
-      }
+      "h": ""
     },
     {
       "n":"rfidscan",
