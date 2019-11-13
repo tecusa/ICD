@@ -34,7 +34,7 @@ The unique element in the packet is the parametername "state". State data elemen
         "epc":"",
         "sn":"",
         "type":"gps",
-        "t":"2019-11-01T13:33:23.003Z"
+        "t":"2019-11-01T13:33:23.003Z",
         "lat": 30.00,
         "lng": -90.00,
         "alt": 10,
