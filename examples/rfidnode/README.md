@@ -1,6 +1,6 @@
 # RFID Node
 
-## Sample Packet
+## Sample Data Packet
 
 The following packet is defined to allow all network devies to provide RFID node scan data and state information.
 
@@ -8,7 +8,7 @@ The following packet is defined to allow all network devies to provide RFID node
 
 The unique element in the packet is the parametername "state". State data elements are expected to have a numeric value, or "v", of 1.
 
-### Full Example of RFID Node
+### Raw Data Example of RFID Node
 
 [RFID Node JSON Example File](https://github.com/RadioBro/ICD/blob/master/examples/rfidnode/rfidnodeexample.json)
 
@@ -25,16 +25,45 @@ The unique element in the packet is the parametername "state". State data elemen
     },
     {
       "n":"rfidraw",
-      "t":"2019-11-01T13:33:23.003Z",
+      "t":"2019-11-01T13:33:21.000Z",
       "h": "",
       "j":{
         "device":"RFID0000"
       }
     },
     {
+      "n":"rfidraw",
+      "t":"2019-11-01T13:33:22.000Z",
+      "h": "",
+      "j":{
+        "device":"RFID0000"
+      }
+    },
+    {
+      "n":"rfidraw",
+      "t":"2019-11-01T13:33:23.000Z",
+      "h": "",
+      "j":{
+        "device":"RFID0000"
+      }
+    }
+  ]
+}
+```
+
+### Scan and GPS Data Example of RFID Node
+
+```json
+{
+  "h":{
+    "n":"RFID0000",
+    "t":"2019-11-01T13:33:23.003Z"
+  },
+  "d":[
+    {
       "n":"rfidscan",
       "h": "",
-      "t":"2019-11-01T13:33:23.003Z",
+      "t":"2019-11-01T13:33:22.000Z",
       "j":{
         "device":"RFID0000",
         "epc":"",
@@ -44,7 +73,7 @@ The unique element in the packet is the parametername "state". State data elemen
     },
     {
       "n":"rfidgps",
-      "t":"2019-11-01T13:33:23.003Z",
+      "t":"2019-11-01T13:33:21.000Z",
       "j":{
         "device":"RFID0000",
         "epc":"",
@@ -60,6 +89,7 @@ The unique element in the packet is the parametername "state". State data elemen
   ]
 }
 ```
+
 ### rfidraw Details
 
 h is the hex response of the rfid capture
