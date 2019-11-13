@@ -139,6 +139,7 @@ j.direction is degrees from North
           "hae": -27.2556,
           "radius": 1,
           "direction": 20
+          }
         },
         {
         "n":"rfidassetadd",
@@ -147,6 +148,7 @@ j.direction is degrees from North
           "epc":"",
           "sn":"",
           "group":""
+          }
         },
         {
         "n":"rfidassetremove",
@@ -155,6 +157,7 @@ j.direction is degrees from North
           "epc":"",
           "sn":"",
           "group":""
+          }
         }
       }
     ]
