@@ -122,11 +122,11 @@ j.direction is degrees from North
 
 ```json
 {
-    h:{
-        n:"RFID0000",
-        t:"2014-03-14T16:00:00.000Z"
+    "h":{
+        "n":"RFID0000",
+        "t":"2014-03-14T16:00:00.000Z"
     },
-    c:[
+    "c":[
         {
         "n":"rfidgps",
         "t":"2019-11-01T13:33:21.000Z",
@@ -139,6 +139,22 @@ j.direction is degrees from North
           "hae": -27.2556,
           "radius": 1,
           "direction": 20
+        },
+        {
+        "n":"rfidassetadd",
+        "t":"2019-11-01T13:33:21.000Z",
+        "j":{
+          "epc":"",
+          "sn":"",
+          "group":""
+        },
+        {
+        "n":"rfidassetremove",
+        "t":"2019-11-01T13:33:21.000Z",
+        "j":{
+          "epc":"",
+          "sn":"",
+          "group":""
         }
       }
     ]
