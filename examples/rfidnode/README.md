@@ -51,6 +51,32 @@ The unique element in the packet is the parametername "state". State data elemen
 }
 ```
 
+### rawGPS Data Example of RFID Node
+
+```json
+{
+  "h":{
+    "n":"RFID0000",
+    "t":"2019-11-01T13:33:23.003Z"
+  },
+  "d":[
+    {
+      "n":"gps",
+      "t":"2019-11-01T13:33:21.000Z",
+      "j":{
+        "device":"RFID0000",
+        "lat": 30.00,
+        "lng": -90.00,
+        "alt": 10,
+        "hae": -27.2556,
+        "radius": 1,
+        "direction": 20
+      }
+    }
+  ]
+}
+```
+
 ### Scan and GPS Data Example of RFID Node
 
 ```json
