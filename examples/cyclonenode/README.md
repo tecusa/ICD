@@ -39,6 +39,31 @@ The unique element in the packet is the parametername "cs". CS data elements are
 }
 ```
 
+### UHF Radio Eample
+
+The data arrives under the recieving server serial number.
+
+The data payload includes the data from Cyclone Node along with RSSI from a UHF radio. The Cyclone Node sends data as in the c2 binary format. The UHF radio provides the RSSI in units of dBm.  After processing the cyclone node payload, a final data packet will be outputted with the host node and host sensor serial number.
+
+```json
+{
+  "h":{
+    "n":"CS0000",
+    "t":"2019-09-04T13:33:23.003Z"
+  },
+  "d":[
+    {
+      "n":"c2",
+      "h":""
+    },
+    {
+      "n":"rssi",
+      "v":10
+    }
+  ]
+}
+```
+
 ### Full Example
 
 [Cyclone Node Example JSON](https://github.com/RadioBro/ICD/blob/master/examples/cyclonenode/cyclonenodeexample.json)
