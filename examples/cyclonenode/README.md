@@ -6,6 +6,8 @@ The following packet is defined to allow Cyclone Nodes to be the network gateway
 
 Cyclone Node supports state data, as defined [here](https://github.com/RadioBro/ICD/tree/master/examples/state).
 
+### Cyclone Binary 2
+
 The Cyclone Node will submit data in a binary format, often Cyclone Binary 2. This data can be received in the data 'h' for hex. [Example Packet](cyclonenodebinary2example.json)
 
 ### Discussion CS
